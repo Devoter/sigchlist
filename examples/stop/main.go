@@ -1,12 +1,3 @@
-# sigchlist
-
-[![Build Status](https://travis-ci.com/Devoter/sigchlist.svg?branch=master)](https://travis-ci.com/Devoter/sigchlist)
-
-The utility provides a channels slice, which is used for broadcasting a signal to multiple goroutines.
-
-The package can be used to stop a goroutines pool together with `sync.WaitGroup`:
-
-```go
 package main
 
 import (
@@ -35,8 +26,3 @@ func main() {
 
 	wg.Wait() // after 1 second
 }
-```
-
-## License
-
-[MIT](LICENSE)
